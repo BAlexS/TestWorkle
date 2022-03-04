@@ -1,0 +1,228 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+a {
+   color: black;
+}
+.content{
+   width: 100%;
+   height: 90%;
+}
+
+.container{
+   width: 100%;
+   margin: 5% 0;
+}
+
+.publication{
+   width: 100%;
+   margin: 10px 0 10px;  
+   line-height: 1.5;
+   font-size: 16px;
+}
+
+.author{
+   width: 100%;
+   height: 50px;
+}
+
+.avatar{
+   width: 50px;
+   height: 50px;
+   float: left;
+}
+
+.avatarPhoto{
+   width: 100%;
+   height: 100%;
+   border-radius: 25px;
+}
+
+.nameNickname{
+   width: 70%;
+   float: left;
+   max-height: 55px;
+   margin: 0 10px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name {
+   width: 100%;
+   font-weight: bold;
+   float: left;
+}
+
+.nickName{
+   width: 100%;
+   float: left;
+}
+
+.imageContainer, .imageContainer3, .imageContainer2,.imageContainer4, .imageContainer5, .imageContainer6{
+   width: 100%;
+   margin-top:10px;
+}
+
+.imageContainer_img, .imageContainer_img6, .imageContainer_img2,.imageContainer_img3, .imageContainer_img4, .imageContainer_img5{
+   width: 100%;
+   object-fit: cover;
+   max-width: 480px;
+   max-height: 350px;
+}
+
+.views{
+   width: 100%;
+   height: 34px;
+   text-align: center;
+}
+
+.number{
+   width: 18%;
+   margin-top: 4px;
+   float: right;
+}
+
+.eye{
+   width: 12%;
+   float: right;
+}
+
+footer{
+   position: fixed;
+   width: 100%;
+   height: 8%;
+   background-color: black;
+   padding-top: 3%;
+}
+
+.pagination__wrapper {
+   height: 50px;
+   left: 50%;
+   position: absolute;
+   text-align: center;
+   -webkit-transform: translate(-50%, -50%);
+           transform: translate(-50%, -50%);
+   top: 50%;
+   width: 400px;
+}
+ 
+.pagination {
+   display: inline-block;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+ .pagination li {
+   display: block;
+   float: left;
+   padding: 5px;
+}
+ 
+.pagination button,.pagination span {
+   background: none;
+   border: none;
+   box-sizing: border-box;
+   color: white;
+   display: block;
+   font-size: 16px;
+   height: 40px;
+   line-height: 40px;
+   min-width: 30px;
+   padding: 0;
+}
+
+.pagination button {
+   outline: none;
+   position: relative;
+   -webkit-transition: all 170ms linear;
+   transition: all 170ms linear;
+}
+ 
+.active span{
+   font-size: 25px;
+}
+
+@media (min-width: 480px) {
+
+   .content{
+      height: 91%;
+      width: 100%;
+   }
+
+   .container{
+      width: 90%;
+      margin: 2% 5%;
+   }
+   .imageContainer_img, .imageContainer_img6, .imageContainer_img2,.imageContainer_img3, .imageContainer_img4, .imageContainer_img5{
+      max-width: 768px;
+      max-height: 450px;
+   }
+}
+
+@media (min-width: 768px) {
+   .content{
+      width: 100%;
+      height: 93%;
+      padding:5%;
+   }
+
+   .container{
+      width: 40%;
+      margin:1% 5%;
+      float: left;
+   }
+
+   .imageContainer_img, .imageContainer_img6, .imageContainer_img2,.imageContainer_img3, .imageContainer_img4, .imageContainer_img5{
+      max-width: 400px;
+      max-height: 300px;
+   }
+}
+
+@media (min-width: 1000px) {
+   .content{
+      width: 100%;
+      height: 93%;
+      padding:2% 10%;
+   }
+   
+   .container{
+      width: 40%;
+      float: left;
+      margin: 1% 5%;
+   }
+
+   .imageContainer_img, .imageContainer_img6, .imageContainer_img2,.imageContainer_img3, .imageContainer_img4, .imageContainer_img5{
+      max-width: 100%;
+      max-height: 500px;
+   }
+}
